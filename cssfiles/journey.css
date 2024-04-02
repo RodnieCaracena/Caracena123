@@ -1,0 +1,103 @@
+body {
+    background-image: url(../pokemons/pokes.png); /* Replace with your actual image path */
+    font-family: 'Press Start 2P', cursive; /* Added a pixelated font for a game-like feel */
+    color: #fff;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Hide horizontal scrollbar caused by animation */
+}
+
+@keyframes moveAnimation1 {
+    0% {
+        transform: translateX(-300%); /* Start off-screen to the left */
+    }
+    100% {
+        transform: translateX(300%); /* Move off-screen to the right */
+    }
+}
+@keyframes moveAnimation4 {
+    0% {
+        transform: translateX(-300%); /* Start off-screen to the left */
+    }
+    100% {
+        transform: translateX(300%); /* Move off-screen to the right */
+    }
+}
+
+@keyframes moveAnimation2 {
+    0% {
+        transform: translateX(700%); /* Start off-screen to the right */
+    }
+    100% {
+        transform: translateX(-700%); /* Move off-screen to the left */
+    }
+}
+
+@keyframes moveAnimation3 {
+    0% {
+        transform: translateX(700%); /* Start off-screen to the right */
+    }
+    100% {
+        transform: translateX(-700%); /* Move off-screen to the left */
+    }
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 40px;
+    color: #ffcc00; /* Pikachu yellow */
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Added text shadow for a cool effect */
+}
+
+.pokemon-img {
+    margin-bottom: 20px; /* Add spacing between text and button */
+    animation: moveAnimation1 23s linear infinite; /* Adjust the duration as needed */
+    width: 200px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.pokemon-img2 {
+    margin-bottom: 20px; /* Add spacing between text and button */
+    animation: moveAnimation2 17s linear infinite; /* Adjust the duration as needed */
+    width: 100px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.pokemon-img3 {
+    margin-bottom: 30px; /* Add spacing between text and button */
+    animation: moveAnimation2 24s linear infinite; /* Adjust the duration as needed */
+    width: 100px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.pokemon-img4 {
+    margin-bottom: 20px; /* Add spacing between text and button */
+    animation: moveAnimation1 19s linear infinite; /* Adjust the duration as needed */
+    width: 100px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+#goBackButton {
+    background-color: #ffcc00; /* Pikachu yellow */
+    color: #333; /* Text color */
+    font-family: 'Press Start 2P', cursive; /* Use pixelated font for the button */
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#goBackButton:hover {
+    background-color: #ffd633; /* Darker shade on hover */
+}

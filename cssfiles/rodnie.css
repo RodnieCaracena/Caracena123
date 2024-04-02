@@ -1,0 +1,90 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../pokemons/world.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+h1, h2, h3, a {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(94, 215, 130);
+    font-family: 'Press Start 2P', cursive;
+    font-style: oblique;
+    font-size: xx-large;
+    z-index: 2;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+    z-index: 2;
+}
+
+h3 {
+    color: #040e5b;
+    position: relative;
+    font-family: 'Press Start 2P', cursive;
+    font-size: large;
+}
+
+.boy-button,
+.girl-button {
+    color: #fff;
+    background-color: #0b507e;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: 'Press Start 2P', cursive;
+    z-index: 2;
+}
+
+.girl-button {
+    background-color: #e73ca8;
+}
+
+.pokemon-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 80%;
+}
+
+/* Animation for Pokemon images */
+.pokemon-img {
+    animation: moveAnimation 3s ease infinite;
+}
+
+#myAudio {
+    position: fixed;
+    bottom: 10px; /* adjust the distance from the bottom as needed */
+    right: 10px; /* adjust the distance from the right as needed */
+    z-index: 1000; /* ensure it's on top of other elements */
+}
+
+
+@keyframes moveAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
