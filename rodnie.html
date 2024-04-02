@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pokemon</title>
+    <h1><strong>Welcome to the World of Pokemon</strong></h1>
+    <link rel="stylesheet" href="cssfiles\rodnie.css">
+    <meta name="description" content="Welcome to the world of Pokemon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Import the 'Press Start 2P' font -->
+    <title>Adventure Starter</title>
+</head>
+
+<body>
+
+    <div style="display: flex;">
+        <img class="pokemon-img" src="pokemons\sceptile-removebg-preview.png" alt="sceptile-removebg-preview">
+        <img src="pokemons\prof.jpg" alt="Centered Image">
+        <!-- Container for Pokemon images -->
+        <div class="pokemon-container">
+
+
+            <img class="pokemon-img" src="pokemons\lucario-removebg-preview.png" alt="lucario-removebg-preview">
+        </div>
+    </div>
+
+    <h2>Your Adventure Starts Now!</h2>
+    <section>
+        <h3>Firstly, Are You a Boy or a Girl?</h3>
+        <!-- Add the boy-button class to the "Boy" link -->
+        <h2><a href="boy.html" class="boy-button">Boy</a></h2>
+        <!-- Add the girl-button class to the "Girl" link -->
+        <h2><a href="girl.html" class="girl-button">Girl</a></h2>
+        <script>
+            // Function to save the name
+            function saveName() {
+                var playerName = document.getElementById("playerName").value;
+                localStorage.setItem("playerName", playerName);
+                return true; // Allow form submission
+            }
+        </script>
+    </section>
+
+    <!-- For Audio -->
+    <audio autoplay>
+        <source src="littleroot.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    </script>
+</body>
+</html>
